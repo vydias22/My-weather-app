@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Draft</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container weather-app">
+      <form id="search-city" class="search-form">
+        <div class="row">
+          <div class="col-5">
+            <input
+              type="search"
+              placeholder="Enter a City"
+              autofocus="on"
+              class="form-control"
+              id="search-text-input"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="submit"
+              value="search"
+              class="form-control search-button"
+            />
+          </div>
+          <div class="col-3">
+            <button class="btn btn-success" id="current-location-button">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-5">
+          <h1 class="cityName" id="name-of-city"></h1>
+          <ul>
+            <li id="date-day-time"></li>
+            <li id="weatherDiscription"></li>
+          </ul>
+        </div>
+        <div class="col-7">
+          <div
+            class="btn-group city-buttons"
+            role="group"
+            aria-label="Basic example"
+          >
+            <button type="button" class="btn btn city-button">New York</button>
+            <button type="button" class="btn btn city-button">Austin</button>
+            <button type="button" class="btn btn city-button city-la">
+              Los Angeles
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <img
+              src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
+              alt="partlyCloudy-icon"
+              class="weather-icon float-left"
+            />
+            <div class="float-left">
+              <span id="showCityTemperature" class="temperature"> </span>
+              <span class="unit">
+                <a href="#" id="fahrenheit-link"> °F| </a>
+                <a href="#" id="celsius-link">°C</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 7%</li>
+            <li>Humidity:<span id="humidity"> </span>%</li>
+            <li>Wind:<span id="wind"> </span> mph</li>
+          </ul>
+        </div>
+      </div>
+      <div class="forecastDays">
+        <div class="row">
+          <div class="col-2">
+            <div class="days-of-the-week">Wed</div>
+            <div class="degree"><strong>92°</strong> 68°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/sun.png"
+              alt="sunny-icon"
+            />
+          </div>
+          <div class="col-2">
+            <div class="days-of-the-week">Thu</div>
+            <div class="degree"><strong>91°</strong> 71°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
+              alt="partlyCloudy-icon"
+            />
+          </div>
+          <div class="col-2">
+            <div class="days-of-the-week">Fri</div>
+            <div class="degree"><strong>87°</strong> 70°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/storm.png"
+              alt="rainstorm-icon"
+            />
+          </div>
+          <div class="col-2">
+            <div class="days-of-the-week">Sat</div>
+            <div class="degree"><strong>89°</strong> 68°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/rain.png"
+              alt="rain-icon"
+            />
+          </div>
+          <div class="col-2">
+            <div class="days-of-the-week">Sun</div>
+            <div class="degree"><strong>90°</strong> 69°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
+              alt="partlyCloudy-icon"
+            />
+          </div>
+          <div class="col-2">
+            <div class="days-of-the-week">Mon</div>
+            <div class="degree"><strong>89°</strong> 69°</div>
+            <img
+              src="https://img.icons8.com/dusk/64/000000/rain.png"
+              alt="rain-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
