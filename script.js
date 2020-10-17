@@ -78,7 +78,7 @@ function convertToCelsius(event) {
 
   let temperatureElement = document.querySelector(".temperature");
   let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = 19;
+  //temperatureElement.innerHTML = 19;
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
@@ -88,7 +88,7 @@ function convertToFahrenheit(event) {
 
   let temperatureElement = document.querySelector(".temperature");
   let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = 66;
+  //temperatureElement.innerHTML = 66;
 }
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
