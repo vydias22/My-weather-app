@@ -1,15 +1,16 @@
 body {
-  font-family: Roboto, arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 h1 {
   display: block;
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 25px;
   height: 28px;
   line-height: 28.8px;
   text-align: left;
   width: 618px;
   margin: 0;
+  color: #514f70;
+  font-weight: bolder;
 }
 ul {
   margin: 0;
@@ -17,33 +18,37 @@ ul {
 }
 
 li {
-  color: rgb(135, 135, 135);
+  color: #585757;
   display: block;
-  font-size: 16px;
-  font-weight: 100;
+  font-size: 12px;
   height: 19px;
   line-height: 19.2px;
   text-align: left;
   width: 618px;
+  font-weight: bolder;
 }
 .degree {
-  font-size: 14px;
-  color: #726a95;
+  font-size: 12px;
+  color: #0e3460;
 }
 .days-of-the-week {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 10px;
+  font-weight: bolder;
 }
-.search-button {
+.search-button,
+.search-button:focus {
   color: black;
-  background-color: #e5cfe5;
+  background-color: #ec6e4c;
   border: #726a95;
 }
-.your-loction-button {
-  color: black;
-  background-color: #bfcfff;
+
+.your-location-button {
+  color: #f6f6f6;
+  background-color: #0e3460;
   border: #726a95;
+  width: 100%;
 }
+
 .weather-app-container {
   margin: 20px auto;
   max-width: 630px;
@@ -53,6 +58,7 @@ li {
   border: 1px solid #726a95;
   padding: 20px;
   border-radius: 10px;
+  background-color: #9ba4b4;
 }
 
 .temperature {
@@ -65,7 +71,7 @@ li {
 .weather-icon {
   height: 70px;
   width: 70px;
-  margin-right: 10px;
+  margin: 0 auto;
 }
 
 .unit {
@@ -74,7 +80,7 @@ li {
 }
 
 .search-form {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .city-buttons {
@@ -86,6 +92,7 @@ li {
   margin-bottom: 20px;
   width: 100px;
   height: 38px;
+  color: #0e3460;
 }
 
 .city-la {
@@ -94,4 +101,44 @@ li {
 
 .source-code-url {
   margin-top: 5px;
+}
+
+.humidity-percentage {
+  font-size: 20px;
+  color: #514f70;
+  font-weight: bolder;
+}
+
+.wind-speed {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #514f70;
+  font-weight: bolder;
+}
+
+.day {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.day:hover {
+  background-color: #e89f71;
+}
+
+.day img {
+  width: 68px;
+  height: 68px;
+}
+
+.top-left-weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.forecastDays {
+  margin-top: 20px;
+}
+
+.degree-converter {
+  color: #ec6e4c;
 }

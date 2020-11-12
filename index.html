@@ -19,7 +19,7 @@
       <div class="weather-app">
         <form id="search-city" class="search-form">
           <div class="row">
-            <div class="col-5">
+            <div class="col-6">
               <input
                 type="search"
                 placeholder="Enter a City"
@@ -28,7 +28,7 @@
                 id="search-text-input"
               />
             </div>
-            <div class="col-4">
+            <div class="col-3">
               <input
                 type="submit"
                 value="Search"
@@ -37,7 +37,7 @@
             </div>
             <div class="col-3">
               <button
-                class="btn btn-success your-loction-button"
+                class="btn your-location-button"
                 id="current-location-button"
               >
                 Current
@@ -83,80 +83,66 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
+        <div id="day1" class="row">
+          <div class="col-6 current-weather">
             <div class="clearfix">
               <img
-                src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
-                alt="partlyCloudy-icon"
-                class="weather-icon float-left"
+                id="first-weather-image"
+                class="top-left-weather-icon float-left"
               />
               <div class="float-left">
                 <span id="showCityTemperature" class="temperature"> </span>
                 <span class="unit">
-                  <a href="#" id="fahrenheit-link"> °F| </a>
-                  <a href="#" id="celsius-link">°C</a>
+                  <a class="degree-converter" href="#" id="celsius-link"
+                    >°C |</a
+                  >
+                  <a class="degree-converter" href="#" id="fahrenheit-link"
+                    >°F</a
+                  >
                 </span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Precipitation: 7%</li>
-              <li>Humidity:<span id="humidity"> </span>%</li>
-              <li>Wind:<span id="wind"> </span> mph</li>
+              <li class="humidity-percentage">
+                Humidity: <span id="humidity"> </span>%
+              </li>
+              <li class="wind-speed">Wind: <span id="wind"> </span> mph</li>
             </ul>
           </div>
         </div>
         <div class="forecastDays">
           <div class="row">
-            <div class="col-2">
-              <div class="days-of-the-week">Wed</div>
-              <div class="degree"><strong>92°</strong> 68°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/sun.png"
-                alt="sunny-icon"
-              />
+            <div id="day2" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
-            <div class="col-2">
-              <div class="days-of-the-week">Thu</div>
-              <div class="degree"><strong>91°</strong> 71°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
-                alt="partlyCloudy-icon"
-              />
+            <div id="day3" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
-            <div class="col-2">
-              <div class="days-of-the-week">Fri</div>
-              <div class="degree"><strong>87°</strong> 70°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/storm.png"
-                alt="rainstorm-icon"
-              />
+            <div id="day4" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
-            <div class="col-2">
-              <div class="days-of-the-week">Sat</div>
-              <div class="degree"><strong>89°</strong> 68°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/rain.png"
-                alt="rain-icon"
-              />
+            <div id="day5" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
-            <div class="col-2">
-              <div class="days-of-the-week">Sun</div>
-              <div class="degree"><strong>90°</strong> 69°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png"
-                alt="partlyCloudy-icon"
-              />
+            <div id="day6" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
-            <div class="col-2">
-              <div class="days-of-the-week">Mon</div>
-              <div class="degree"><strong>89°</strong> 69°</div>
-              <img
-                src="https://img.icons8.com/dusk/64/000000/rain.png"
-                alt="rain-icon"
-              />
+            <div id="day7" class="col-2 day">
+              <div class="days-of-the-week"></div>
+              <div class="degree"></div>
+              <img />
             </div>
           </div>
         </div>
